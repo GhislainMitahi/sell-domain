@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from '../components/Nav';<Nav/>
+import Nav from '../cors/nav/Nav';<Nav/>
 
 const singIn = () => {
   return (
