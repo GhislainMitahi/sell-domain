@@ -4,10 +4,9 @@ import logo from '../../images/log.png';
 import styles from './NavStyle.module.css';
 
 
-const Nav = () => {
-    console.log(styles);
+const Nav = () => { 
     return (
-        <div className={`h-[80px] w-full bg-slate-900 flex justify-center align-center ${styles.nav}`}>
+        <div className={`h-[80px] w-full bg-white-900 flex justify-center align-center ${styles.nav}`}>
             <div className = {`w-[95%] border border-white flex justify-between items-center`}>
                 <p className = {`h-[100%] w-[15%] border border-white flex justify-center align-center`}>
                     <img src={logo} alt="" />
