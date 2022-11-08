@@ -4,7 +4,15 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'reseller': "url('/src/images/resellers.jpg')",
+        'logo': "url('/src/images/log.png')",
+      },
+       colors: {
+        'gh-blue': '#040449',
+      }
+    },
   },
   plugins: [],
 }
