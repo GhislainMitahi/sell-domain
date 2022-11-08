@@ -1,0 +1,9 @@
+.call {
+    border: 1px solid;
+}
+
+.image {
+    background-image: linear-gradient(90deg, rgb(4, 4, 73) 0%, rgba(84, 84, 184, 0.199) 35%, rgba(243, 132, 41, 0.267) 100%), url(../../images/resellers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
