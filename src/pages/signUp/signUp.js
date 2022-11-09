@@ -1,7 +1,8 @@
 import React from 'react'
 import Nav from '../../cors/nav/Nav';
 import style from './sign-up.module.css';
-import Btn from '../../cors/Button/Button'
+import Btn from '../../cors/Button/Button';
+import Footer from '../../components/Footer/Footer'
 
 const singUp = () => {
 
@@ -87,7 +88,7 @@ const images = importAll(require.context('../../images/Group', false, /.svg/));
           <Btn btn={ btnValue }/>
         </div>
       </section>
-      <section className="w-[100%] flex justify-center items-center">
+      <section className="w-[100%] flex justify-center items-center mb-10">
         <div className="flex justify-start items-center w-[90%]">
         <div className="w-[50%] flex flex-col justify-center items-center pr-20 gap-4">
           <h1 className="self-start text-5xl font-bold">Partner with us</h1>
@@ -107,7 +108,10 @@ const images = importAll(require.context('../../images/Group', false, /.svg/));
           </div>
           </div>
           </div>
-    </section>
+      </section>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   )
 }
