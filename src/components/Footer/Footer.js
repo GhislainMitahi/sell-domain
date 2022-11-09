@@ -1,6 +1,7 @@
 import React from 'react';
 import Btn from '../../cors/Button/Button';
 import logo from '../../images/log.png';
+import { BsChatFill } from "react-icons/bs";
 
 const Footer = () => {
 
@@ -78,6 +79,12 @@ const Footer = () => {
                     </div>
                 </section>
             </div>
+            <div className="fixed top-[90%] left-[92%]  text-[#0e76bc] text-lg bg-[orange] rounded-2xl shadow-md">
+                    <ul className="flex justify-center items-center gap-2 h-[45px] w-[80px] ">
+                        <li className=""><BsChatFill/></li>
+                        <li className="">Chat</li>
+                    </ul>
+                </div>
         </>
     );
 };
