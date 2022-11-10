@@ -1,12 +1,11 @@
-import React from 'react'
+import React from 'react';
 import Nav from '../../cors/nav/Nav';
 import style from './sign-up.module.css';
 import Btn from '../../cors/Button/Button';
-import Footer from '../../components/Footer/Footer'
+import Footer from '../../components/Footer/Footer';
+import { Link } from 'react-router-dom';
 
 const singUp = () => {
-
-  
 
   const btnValue = {
     name : "Become a reseller today"
@@ -85,7 +84,10 @@ const images = importAll(require.context('../../images/Group', false, /.svg/));
         </div>
         </div>
         <div className='self-center'>
-          <Btn btn={ btnValue }/>
+          <Link to="/count/Autenthific">
+            <Btn btn={btnValue} />
+          </Link>
+          
         </div>
       </section>
       <section className="w-[100%] flex justify-center items-center mb-10">
