@@ -5,8 +5,9 @@ import styles from './NavStyle.module.css';
 
 
 const Nav = () => { 
+
     return (
-        <div className={`h-[80px] w-full bg-white-900 flex justify-center align-center fixed top-0 bg-white ${styles.nav}`}>
+        <div className={`h-[80px] w-full bg-white-900 flex justify-center align-center fixed top-0 bg-white  ${styles.nav}`}>
             <div className = {`w-[95%] border border-white flex justify-between items-center`}>
                 <p className = {`h-[100%] w-[15%] border border-white flex justify-center align-center`}>
                     <img src={logo} alt="" />
