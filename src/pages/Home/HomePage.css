@@ -1,0 +1,22 @@
+.homeImage {
+    background-image: url(../../images/happy2.jpg);
+    background-position: 160% 120%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: center;
+    position: relative
+}
+
+.headText {
+    background-image: url(../../images/header-bg.svg);
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: calc(100%);
+    width: 65%;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
