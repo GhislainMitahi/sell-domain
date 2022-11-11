@@ -1,3 +1,4 @@
 .nav {
-    color: orange
+    color: orange;
+    z-index: 1000
 }
