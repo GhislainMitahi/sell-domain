@@ -94,7 +94,7 @@ const images = importAll(require.context('../../images/Group', false, /.svg/));
         <div className="flex justify-start items-center w-[90%]">
         <div className="w-[50%] flex flex-col justify-center items-center pr-20 gap-4">
           <h1 className="self-start text-5xl font-bold">Partner with us</h1>
-          <p className='w'>
+          <p className=''>
              You are about to join one of the world’s largest domain registrars trusted by 10,000+ resellers in over 150 countries.
           </p>
         </div>
