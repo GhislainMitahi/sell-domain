@@ -4,6 +4,8 @@ import Footer from '../../components/Footer/Footer';
 //  import style from './Home.module.css';
 import './HomePage.css';
 import Btn from '../../cors/Button/Button';
+import woman from '../../images/woman.webp'
+import men from '../../images/two-men-using-low-cost-professional-email.webp'
 
 const HomePage = () => {
   const btnValue = {
@@ -100,7 +102,7 @@ const images = importAll(require.context('../../images/GroupHome', false, /.svg/
           ))}
             </div>
           </section>
-        <section className='flex w-full justify-center items-center mt-[100px] border'>
+        <section className='flex w-full justify-center items-center mt-[100px]'>
           <div className='w-[90%] flex justify-center items-start gap-10'>
           <div className='w-[50%] flex flex-col gap-12'>
             <p className="text-5xl w-[90%] text-[orange]">
@@ -124,7 +126,62 @@ const images = importAll(require.context('../../images/GroupHome', false, /.svg/
             </div>
             </div>
           </section>
-          <section></section>
+        <section className='w-full flex flex-col justify-center items-center gap-20 mt-[10rem]'>
+          <div className=' w-[90%] flex justify-center items-center'>
+          <div className=' w-[50%] flex justify-center'>
+              <img src={woman} alt="" />
+          </div>
+          <div className='w-[50%] flex flex-col gap-10'>
+              <h2 className='text-gh-blue text-5xl w-[90%] font-bold'>
+                <span className="text-[orange]">
+                  Selling domains </span>
+                 made simple
+              </h2>
+            <p className=' text-gray-500 tex-md'>Domain names are at the center of everything we do. Our white-label platform lets you start selling 650+ domain extensions in minutes through our intuitive control panel. You can also integrate via our API to completely automate domain registration and management.</p>
+            <p className='text-gray-500 text-md'>You’ll have the flexibility to set your own margins, offer domains right from your website, and brand your end-user messages. Use our products on your terms.</p>
+              <p className=' text-gh-blue text-xl font-bold'>
+                <a href="http://">Explore our domain reseller program</a>
+              </p>
+            </div>
+          </div>
+          
+
+
+
+
+
+          <div className=' w-[90%] flex justify-center items-center'>
+            <div className='w-[50%] flex flex-col gap-10'>
+              <h2 className='text-gh-blue text-5xl w-[95%] font-bold'>
+                <span className="text-[orange]">
+                  Boost customer loyalty with </span>
+                 low-cost professional email
+              </h2>
+            <p className=' text-gray-500 tex-md'>OpenSRS Email is an affordable, secure, and reliable email solution trusted worldwide. It costs less than comparable alternatives and gives you flexible mailbox storage of up to 100GB.</p>
+            <p className='text-gray-500 text-md'>Whether you are looking to give email away for free, as part of a bundle, or offer it as a value-added service, OpenSRS Email allows you to pay for what you need and avoid the upfront and ongoing operational costs of running an in-house solution.</p>
+              <p className=' text-gh-blue text-xl font-bold'>
+                <a href="http://">Explore professional email</a>
+              </p>
+            </div>
+            <div className=' w-[50%] flex justify-center'>
+              <img src={men} alt="" />
+          </div>
+          </div>
+          
+          <div className=' w-[90%] flex justify-center items-center'>
+          <div className='w-[50%]'>
+            <h2 className=''>Selling domains made simple</h2>
+            <p className=''>Domain names are at the center of everything we do. Our white-label platform lets you start selling 650+ domain extensions in minutes through our intuitive control panel. You can also integrate via our API to completely automate domain registration and management.</p>
+            <p className=''>You’ll have the flexibility to set your own margins, offer domains right from your website, and brand your end-user messages. Use our products on your terms.</p>
+              <p className=''>
+                <a href="http://">Explore our domain reseller program</a>
+              </p>
+            </div>
+            <div className=' w-[50%]'>
+              <img src={woman} alt="" />
+          </div>
+          </div>
+          </section>
           <section></section>
           <section></section>
           <section></section>
