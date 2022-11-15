@@ -1,11 +1,14 @@
 import React from 'react';
 import Nav from '../../cors/nav/Nav';
 import Footer from '../../components/Footer/Footer';
-//  import style from './Home.module.css';
+ //import style from './Home.module.css';
 import './HomePage.css';
 import Btn from '../../cors/Button/Button';
 import woman from '../../images/woman.webp'
-import men from '../../images/two-men-using-low-cost-professional-email.webp'
+import men from '../../images/two-men-using-low-cost-professional-email.webp';
+// import womanTwo from '../../images/woman-using-computer.webp';
+import Icons from '../../components/Icons/Icons';
+import { BsCheckCircle } from "react-icons/bs";
 
 const HomePage = () => {
   const btnValue = {
@@ -40,7 +43,9 @@ const importAll = (r) => {
     r.keys().map(item => { return images[item.replace('./', '')] = r(item); });
     return images;
 }
-const images = importAll(require.context('../../images/GroupHome', false, /.svg/));
+  const images = importAll(require.context('../../images/GroupHome', false, /.svg/));
+  
+const imagesPlaceHold = importAll(require.context('../../images/GroupeHome2', false, /.svg/));
 
   
   const pub = [
@@ -70,6 +75,32 @@ const images = importAll(require.context('../../images/GroupHome', false, /.svg/
     }
   ]
 
+  const meaning = [
+    {
+      _id: 9,
+      icon: imagesPlaceHold['Grp_1.svg'],
+      intro: "Website builders",
+      text: "Create a totally seamless website-building experience and increase customer loyalty."
+    },
+    {
+      _id: 10,
+      icon: imagesPlaceHold['Grp_2.svg'],
+      intro: "Internet service providers",
+      text: "Boost customer stickiness by cross-selling or bundling our solutions with your products and services."
+    },
+    {
+      _id: 11,
+      icon: imagesPlaceHold['Grp_3.svg'],
+      intro: "Marketing agencies",
+      text: "Create simplicity for your clients by offering additional value-added services in a one-stop shop."
+    },
+    {
+      _id: 12,
+      icon: imagesPlaceHold['Grp_4.svg'],
+      intro: "Hosting companies",
+      text: "Resell on your own terms and increase margins by integrating our whitelabel products."
+    }
+  ]
 
   return (
     <>
@@ -144,12 +175,6 @@ const images = importAll(require.context('../../images/GroupHome', false, /.svg/
               </p>
             </div>
           </div>
-          
-
-
-
-
-
           <div className=' w-[90%] flex justify-center items-center'>
             <div className='w-[50%] flex flex-col gap-10'>
               <h2 className='text-gh-blue text-5xl w-[95%] font-bold'>
@@ -169,25 +194,98 @@ const images = importAll(require.context('../../images/GroupHome', false, /.svg/
           </div>
           
           <div className=' w-[90%] flex justify-center items-center'>
-          <div className='w-[50%]'>
-            <h2 className=''>Selling domains made simple</h2>
-            <p className=''>Domain names are at the center of everything we do. Our white-label platform lets you start selling 650+ domain extensions in minutes through our intuitive control panel. You can also integrate via our API to completely automate domain registration and management.</p>
-            <p className=''>You’ll have the flexibility to set your own margins, offer domains right from your website, and brand your end-user messages. Use our products on your terms.</p>
-              <p className=''>
-                <a href="http://">Explore our domain reseller program</a>
+            <div className='w-[50%] flex flex-col gap-10'>
+              <h2 className='text-gh-blue text-5xl w-[95%] font-bold'>
+                <span className="text-[orange]">
+                  SSL certificates for </span>
+                 every customer need
+              </h2>
+            <p className=' text-gray-500 tex-md'>Resell the world’s most trusted SSL certificate brands at wholesale prices. We offer Wildcards, SAN, DV, OV, and EV options, plus resources to help you offer the right certificate.</p>
+              <p className=' text-gh-blue text-xl font-bold'>
+                <a href="http://">Explore our SSL reseller program</a>
               </p>
             </div>
-            <div className=' w-[50%]'>
-              <img src={woman} alt="" />
+            <div className=' w-[50%] flex flex-col justify-center bg-[#FFF6E5] rounded-xl gap-6 p-6'>
+              <h6 className='text-xl font-bold text-gray-600'>As an OpenSRS SSL reseller, you can:</h6>
+              <ul className='flex flex-col gap-4 text-gray-500'>
+                <li className='flex gap-2'>
+                  <p className='text-blue-500 text-2xl'>
+                    <BsCheckCircle />
+                  </p>
+                <p>
+                   Take advantage of wholesale SSL certificate prices
+              </p>
+                </li>
+                <li className='flex gap-2'>
+                  <p className='text-blue-500 text-2xl'>
+                    <BsCheckCircle />
+                  </p>
+                <p>
+                   Register and re-issue your customers’ certificates from a single place
+              </p>
+                </li>
+                <li className='flex gap-2'>
+                  <p className='text-blue-500 text-2xl'>
+                    <BsCheckCircle />
+                  </p>
+                <p>
+                   Sell right from your website or client portal by using our API or plugins for solutions like WHMCS, HostBill, Clientexec, and Blesta
+              </p>
+                </li>
+              </ul>
           </div>
           </div>
           </section>
-          <section></section>
-          <section></section>
-          <section></section>
-          <section></section>
-          <section></section>
-          <section></section>
+        <section className='w-full my-10'>
+          <div className='bg-gh-blue w-full flex justify-center items-center'>
+          <div className=' text-white flex flex-col justify-center items-center w-[90%]'>
+            <h6 className="py-[5rem] text-5xl">Who is OpenSRS for?</h6>
+            <ul className='grid grid-cols-2 gap-8'>
+              {
+                meaning.map((elements) => (
+                  <li key={elements._id} className="flex gap-8  pb-[5rem]">
+                    <p>
+                      <img src={elements.icon} alt="" />
+                    </p>
+                    <div>
+                    <h6> {elements.intro}</h6>
+                      <p>
+                        {elements.text}
+                    </p>
+                    </div>
+                  </li>
+                ))
+                }
+            </ul>
+            </div>
+            </div>
+          </section>
+        <section className='w-full flex flex-col justify-center items-center py-[5rem]'>
+          <div className='w-[90%] flex gap-x-4'>
+          <div className='w-[50%]'>
+              <Icons/>
+          </div>
+            <div className='w-[50%] flex justify-center items-center'>
+              <p className='text-gh-blue text-4xl font-bold w-[85%]'>
+                <span className='text-[orange]'>Trusted worldwide by companies that </span> care about customer experience
+              </p>
+          </div>
+          </div>
+          </section>
+        <section className="w-full flex justify-center items-center mb-10">
+          <div className=" w-[90%] flex rounded-2xl fotterCardImage ">
+            <div className='w-[100%] flex justify-end items-center fotterCardText'>
+              <div className='w-[53%] flex justify-center items-center bg-[#0e76bc]  h-full rounded-r-2xl'>
+                <div className='text-3xl w-[80%] font-bold flex justify-center items-center'>
+                <p className='w-[60%]'>Join our domain reseller program</p>
+              </div>
+              <p className='w-[20%] flex justify-start items-center'>
+                  <Btn btn={btnValue} />
+                </p>
+              </div>
+            </div>
+          </div>
+          </section>
             <Footer />
       </div>
     </>
