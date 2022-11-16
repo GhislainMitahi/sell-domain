@@ -4,11 +4,13 @@ import Footer from '../../components/Footer/Footer';
  //import style from './Home.module.css';
 import './HomePage.css';
 import Btn from '../../cors/Button/Button';
-import woman from '../../images/woman.webp'
+import woman from '../../images/woman.webp';
 import men from '../../images/two-men-using-low-cost-professional-email.webp';
 // import womanTwo from '../../images/woman-using-computer.webp';
 import Icons from '../../components/Icons/Icons';
 import { BsCheckCircle } from "react-icons/bs";
+import { Link } from 'react-router-dom';
+
 
 const HomePage = () => {
   const btnValue = {
@@ -171,7 +173,7 @@ const imagesPlaceHold = importAll(require.context('../../images/GroupeHome2', fa
             <p className=' text-gray-500 tex-md'>Domain names are at the center of everything we do. Our white-label platform lets you start selling 650+ domain extensions in minutes through our intuitive control panel. You can also integrate via our API to completely automate domain registration and management.</p>
             <p className='text-gray-500 text-md'>You’ll have the flexibility to set your own margins, offer domains right from your website, and brand your end-user messages. Use our products on your terms.</p>
               <p className=' text-gh-blue text-xl font-bold'>
-                <a href="http://">Explore our domain reseller program</a>
+               <Link to="/domains">Explore our domain reseller program</Link>
               </p>
             </div>
           </div>
