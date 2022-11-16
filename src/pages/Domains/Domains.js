@@ -27,10 +27,6 @@ const Domains = () => {
         }
     ]
 
-
-    
-
-
     return (
     <>
             <Nav/>
