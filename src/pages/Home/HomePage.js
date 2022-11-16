@@ -49,7 +49,6 @@ const importAll = (r) => {
   
 const imagesPlaceHold = importAll(require.context('../../images/GroupeHome2', false, /.svg/));
 
-  
   const pub = [
     {
       _id: 5,
