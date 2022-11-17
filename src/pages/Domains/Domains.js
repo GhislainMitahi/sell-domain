@@ -4,7 +4,8 @@ import Nav from '../../cors/nav/Nav';
 import Btn from '../../cors/Button/Button';
 import Business from '../../components/DomainsElements/busisness/Business';
 import Expert from '../../components/DomainsElements/Expert/Expert';
-import Team1 from '../../images/business-team-succeeding.webp'
+import Team1 from '../../images/business-team-succeeding.webp';
+import EpertPicture from '../../images/Domain-experts-desk.webp'
 
 const Domains = () => {
 
@@ -229,8 +230,8 @@ const Domains = () => {
                 <section className={`w-[100%] flex justify-center items-center`}>
                     <Business Team={Team1} />
                 </section>
-                <section>
-                    <Expert/>
+                <section className={`w-[100%] flex justify-center items-center my-36`}>
+                    <Expert expert={EpertPicture}/>
                 </section>
             </div>
     </>
