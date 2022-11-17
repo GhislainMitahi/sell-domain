@@ -6,6 +6,7 @@ import Business from '../../components/DomainsElements/busisness/Business';
 import Expert from '../../components/DomainsElements/Expert/Expert';
 import Looking from '../../components/DomainsElements/Looking/Looking';
 import Prices from '../../components/DomainsElements/Prices/Prices';
+import GirlPub from '../../components/DomainsElements/GirlPub/GirlPub';
 import Team1 from '../../images/business-team-succeeding.webp';
 import EpertPicture from '../../images/Domain-experts-desk.webp'
 
@@ -236,6 +237,9 @@ const Domains = () => {
                     <Looking/>
                 <section className='w-full flex flex-col justify-center items-center py-[5rem]'>
                     <Prices/>
+                </section>
+                <section className="w-full flex justify-center items-center mb-10">
+                    <GirlPub/>
                 </section>
             </div>
     </>
