@@ -29,7 +29,7 @@ const Looking = ({ content = defaultValue}) => {
 
     return (
         <div>
-            <section className={`bg-gh-blue text-white w-full flex justify-center items-center pt-[100px] pb-[100px]`}>
+            <div className={`bg-gh-blue text-white w-full flex justify-center items-center pt-[100px] pb-[100px]`}>
                     <div className={`w-[90%] flex flex-col gap-10`}>
                         <div className={`w-full flex flex-col justify-center items-start`}>
                             <div className={`flex flex-col justify-center items-start w-[100%] gap-6`}>
@@ -53,8 +53,7 @@ const Looking = ({ content = defaultValue}) => {
                         ))}
                         </div>
                     </div>
-            </section>
-            
+            </div>
         </div>
     );
 };
