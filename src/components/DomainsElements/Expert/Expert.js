@@ -2,12 +2,12 @@ import React from 'react';
 
 const Expert = (props) => {
     return (
-        <div className={`w-[90%] flex justify-center items-start gap-8`}>
+        <div className={`w-[90%] flex justify-center items-start gap-10`}>
             <div className={`w-[50%]`}>
                 <img src={props.expert} alt="" className={`w-full h-full`} />
                 </div>
-                <div className={`w-[50%] flex flex-col gap-10`}>
-                    <h1 className={`text-5xl font-bold w-[70%]`}>
+                <div className={`w-[50%] flex flex-col gap-20`}>
+                    <h1 className={`text-5xl font-bold w-[85%]`}>
                         Domain experts<pan className={`text-[orange]`}> you can count on</pan>
                     </h1>
                     <p className={`text-md`}>With over 20 years of industry experience, our team of experts offer incredible practical knowledge to set you up for success.</p>
