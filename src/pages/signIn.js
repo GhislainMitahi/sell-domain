@@ -5,7 +5,7 @@ const singIn = () => {
   return (
     <>
       <Nav/>
-      <p>you can connect to your count pleaase !</p>
+      <p>you can connect to your count please !</p>
     </>
   )
 }
