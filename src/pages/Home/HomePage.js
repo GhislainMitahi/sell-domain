@@ -6,7 +6,6 @@ import './HomePage.css';
 import Btn from '../../cors/Button/Button';
 import woman from '../../images/woman.webp';
 import men from '../../images/two-men-using-low-cost-professional-email.webp';
-// import womanTwo from '../../images/woman-using-computer.webp';
 import Icons from '../../components/Icons/Icons';
 import { BsCheckCircle } from "react-icons/bs";
 import { Link } from 'react-router-dom';
