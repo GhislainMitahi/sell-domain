@@ -6,9 +6,11 @@ import Business from '../../components/DomainsElements/busisness/Business';
 import Expert from '../../components/DomainsElements/Expert/Expert';
 import Looking from '../../components/DomainsElements/Looking/Looking';
 import Prices from '../../components/DomainsElements/Prices/Prices';
+import Questions from '../../components/DomainsElements/Questions/Questions';
 import GirlPub from '../../components/DomainsElements/GirlPub/GirlPub';
+import Footer from '../../components/Footer/Footer';
 import Team1 from '../../images/business-team-succeeding.webp';
-import EpertPicture from '../../images/Domain-experts-desk.webp'
+import ExpertPicture from '../../images/Domain-experts-desk.webp'
 
 const Domains = () => {
 
@@ -114,7 +116,7 @@ const Domains = () => {
     return (
     <>
             <Nav/>
-        <div className='w-full'>
+        <div className='w-full '>
             <section className={`h-[100vh] text-gh-blue flex justify-start items-center w-full ${Style.headerDom}`}>
                 <div className={`h-[90%] w-full flex justify-center items-center`}>
                   <div className={`w-[100%] h-[95%] mt-20 flex justify-start items-center ${Style.headerDomText} `}>
@@ -232,7 +234,7 @@ const Domains = () => {
                     <Business Team={Team1} />
                 </section>
                 <section className={`w-[100%] flex justify-center items-center my-36`}>
-                    <Expert expert={EpertPicture}/>
+                    <Expert expert={ExpertPicture}/>
                 </section>
                     <Looking/>
                 <section className='w-full flex flex-col justify-center items-center py-[5rem]'>
@@ -241,6 +243,10 @@ const Domains = () => {
                 <section className="w-full flex justify-center items-center mb-10">
                     <GirlPub/>
                 </section>
+                <section className={`w-full flex flex-col justify-center items-center mt-[10rem] mb-[5rem]`}>
+                    <Questions/>
+                </section>
+                <Footer />
             </div>
     </>
     );
