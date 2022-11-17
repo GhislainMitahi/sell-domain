@@ -4,6 +4,7 @@ import Nav from '../../cors/nav/Nav';
 import Btn from '../../cors/Button/Button';
 import Business from '../../components/DomainsElements/busisness/Business';
 import Expert from '../../components/DomainsElements/Expert/Expert';
+import Looking from '../../components/DomainsElements/Looking/Looking';
 import Team1 from '../../images/business-team-succeeding.webp';
 import EpertPicture from '../../images/Domain-experts-desk.webp'
 
@@ -13,8 +14,6 @@ const Domains = () => {
     name : "Get start" 
     }
     
-    
-
     const importAll = (r) => {
     let images = {};
     r.keys().map(item => { return images[item.replace('./', '')] = r(item); });
@@ -232,6 +231,9 @@ const Domains = () => {
                 </section>
                 <section className={`w-[100%] flex justify-center items-center my-36`}>
                     <Expert expert={EpertPicture}/>
+                </section>
+                <section>
+                    <Looking/>
                 </section>
             </div>
     </>
