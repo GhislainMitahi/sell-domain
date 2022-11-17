@@ -1,5 +1,5 @@
 import React from 'react';
-import Btn from '../../../cors/Button/Button'
+import Btn from '../../../cors/Button/Button';
 
 const GirlPub = (props) => {
     const btnValue = {
