@@ -1,0 +1,13 @@
+.headerDom {
+    background-image: url(../../images/man-domain.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 110%;
+}
+
+.headerDomText {
+    background-image: url(../../images/header-bg.svg);
+    background-repeat: no-repeat;
+    background-position: -750px center;
+    background-size: 100%;
+}

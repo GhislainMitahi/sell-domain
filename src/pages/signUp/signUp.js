@@ -3,6 +3,7 @@ import Nav from '../../cors/nav/Nav';
 import style from './sign-up.module.css';
 import Btn from '../../cors/Button/Button';
 import Footer from '../../components/Footer/Footer';
+import Icons from '../../components/Icons/Icons';
 import { Link } from 'react-router-dom';
 
 const singUp = () => {
@@ -10,28 +11,6 @@ const singUp = () => {
   const btnValue = {
     name : "Become a reseller today"
   }
-
-const importAll = (r) => {
-    let images = {};
-    r.keys().map(item => { return images[item.replace('./', '')] = r(item); });
-    return images;
-}
-const images = importAll(require.context('../../images/Group', false, /.svg/));
-
-    const groupImage = [
-      images['Group.svg'],
-      images['Group-1.svg'],
-      images['Group-8.svg'],
-      images['Group-6.svg'],
-      images['Group-2.svg'],
-      images['Group-3.svg'],
-      images['Group-4.svg'],
-      images['Group-5.svg'],
-      images['Group-7.svg'],
-      images['Group-9.svg'],
-      images['Group-10.svg'],
-      images['Group-11.svg']
-  ]
 
   return (
     <div>
@@ -94,20 +73,12 @@ const images = importAll(require.context('../../images/Group', false, /.svg/));
         <div className="flex justify-start items-center w-[90%]">
         <div className="w-[50%] flex flex-col justify-center items-center pr-20 gap-4">
           <h1 className="self-start text-5xl font-bold">Partner with us</h1>
-          <p className='w'>
+          <p className=''>
              You are about to join one of the world’s largest domain registrars trusted by 10,000+ resellers in over 150 countries.
           </p>
         </div>
-        <div className="w-[50%]">
-          <div className={`w-full flex justify-center items-center`}>
-            <ul className="grid grid-cols-3 grid-flow-rows gap-4">
-              {groupImage.map((partImage) => (
-                 <li className=" flex justify-center  items-center bg-[#FFF6E5] rounded-md">
-                <img src={partImage} alt="" className='h-[80%] w-[80%]'/>
-              </li>
-              ))}
-            </ul>
-          </div>
+        <div className="w-[50%]">     
+           <Icons/>
           </div>
           </div>
       </section>
