@@ -5,6 +5,7 @@ import Btn from '../../cors/Button/Button';
 import Business from '../../components/DomainsElements/busisness/Business';
 import Expert from '../../components/DomainsElements/Expert/Expert';
 import Looking from '../../components/DomainsElements/Looking/Looking';
+import Prices from '../../components/DomainsElements/Prices/Prices';
 import Team1 from '../../images/business-team-succeeding.webp';
 import EpertPicture from '../../images/Domain-experts-desk.webp'
 
@@ -232,8 +233,9 @@ const Domains = () => {
                 <section className={`w-[100%] flex justify-center items-center my-36`}>
                     <Expert expert={EpertPicture}/>
                 </section>
-                <section>
                     <Looking/>
+                <section className='w-full flex flex-col justify-center items-center py-[5rem]'>
+                    <Prices/>
                 </section>
             </div>
     </>
